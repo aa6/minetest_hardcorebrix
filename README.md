@@ -24,4 +24,4 @@ https://github.com/aa6/minetest_hardcorebrix/commits/master
 
 **Links**
 
-[Minetest forums topic](forum.minetest.net/viewtopic.php?f=11&t=9673)
+[Minetest forums topic](https://forum.minetest.net/viewtopic.php?f=11&t=9673)
