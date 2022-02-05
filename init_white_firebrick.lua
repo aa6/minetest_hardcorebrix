@@ -10,7 +10,7 @@ function minetest_hardcorebrix.on_white_firebrick_node_dig(pos,node,digger)
     -- Fiwhite_brick has a chance not to break.
     if math.random(1,100) - minetest_hardcorebrix.CHANCE_OF_WHITE_FIREBRICK_BREAKING_BY_PICKAXE_PERCENTS < 1 then
         -- Randomly chosen that node must be breaked this time.
-        if     node.name == "minetest_hardcorebrix:node_white_firebrick_dry" then
+        if node.name == "minetest_hardcorebrix:node_white_firebrick_dry" then
             minetest.sound_play("minetest_hardcorebrix_firebrick_broken")
             minetest.swap_node(pos,{ name = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_1" })
         elseif node.name == "minetest_hardcorebrix:node_white_firebrick_dry_damaged_1" then
@@ -187,6 +187,7 @@ minetest.register_node("minetest_hardcorebrix:node_white_firebrick_dry",
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
+    node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry",
     --node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry"
 })
 
@@ -202,6 +203,7 @@ minetest.register_node("minetest_hardcorebrix:node_white_firebrick_dry_damaged_1
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
+    node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_1",
 })
 
 ------------------------------------------------------------------------
@@ -216,6 +218,7 @@ minetest.register_node("minetest_hardcorebrix:node_white_firebrick_dry_damaged_2
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
+    node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_2",
 })
 
 ------------------------------------------------------------------------
@@ -260,6 +263,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_3_nodebox"..index,
         }
     )
 end
@@ -306,6 +310,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_4_nodebox"..index,
         }
     )
 end
@@ -352,6 +357,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_white_firebrick_dry_damaged_5_nodebox"..index,
         }
     )
 end

@@ -168,7 +168,7 @@ minetest.register_node("minetest_hardcorebrix:node_red_firebrick_dry",
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
-    --node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry"
+    node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry",
 })
 
 ------------------------------------------------------------------------
@@ -183,6 +183,7 @@ minetest.register_node("minetest_hardcorebrix:node_red_firebrick_dry_damaged_1",
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
+    node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry_damaged_1",
 })
 
 ------------------------------------------------------------------------
@@ -197,6 +198,7 @@ minetest.register_node("minetest_hardcorebrix:node_red_firebrick_dry_damaged_2",
     sounds         = default.node_sound_stone_defaults(),
     on_blast       = minetest_hardcorebrix.on_node_blast,
     after_destruct = minetest_hardcorebrix.on_node_dig,
+    node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry_damaged_2",
 })
 
 ------------------------------------------------------------------------
@@ -266,6 +268,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry_damaged_3_nodebox"..index,
         }
     )
 end
@@ -337,6 +340,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry_damaged_4_nodebox"..index,
         }
     )
 end
@@ -408,6 +412,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
             },
             on_blast       = minetest_hardcorebrix.on_node_blast,
             after_destruct = minetest_hardcorebrix.on_node_dig,
+            node_dig_prediction = "minetest_hardcorebrix:node_red_firebrick_dry_damaged_5_nodebox"..index,
         }
     )
 end
