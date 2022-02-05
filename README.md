@@ -15,7 +15,10 @@ http://wiki.minetest.com/wiki/Installing_mods
 
 **Development**
 
-- Run `bash util/git_hook_pre_commit.bash install` after repository cloning. `./VERSION` and `./util/version.png` then will be updated automatically on every commit. To increment minor version append " 2" to `./VERSION`.
+- Run `git clone https://github.com/aa6/minetest_hardcorebrix.git; cd minetest_hardcorebrix` to clone the repository.
+- Run `bash util/git_hook_pre_commit.bash install` after repository cloning. `./VERSION` and `./util/version.png` then will be updated automatically on every commit. To increment minor version append " 2" to `./VERSION` file contents.
+- Use `print(dump( ... ))` to print tables to console when debugging
+- Use `error(123)` to stop execution when debugging
 - Use manual http://dev.minetest.net/Category:Methods
 
 **Changelog**
