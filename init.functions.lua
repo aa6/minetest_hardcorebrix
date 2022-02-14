@@ -181,7 +181,7 @@ end
 --    y      x(A+B) = xA*cos(b) - yA*sin(b)
 --     \__x  y(A+B) = xA*sin(b) + yA*cos(b)
 -- 
---    Rotatedef (clockwise) explaination:
+--    Rotatedef (clockwise) explanation:
 --             _____      _____      _____   
 --            /y+  /\    /z+  /\    /x+  /\  
 --           /____/  \  /____/  \  /____/  \
