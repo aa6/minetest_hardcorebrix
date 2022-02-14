@@ -43,7 +43,7 @@ function minetest_hardcorebrix.on_white_firebrick_node_dig(pos,node,digger)
 end
 
 ------------------------------------------------------------------------
--- Looks for red firebrick nodes around pos and exclude from numbers_left 
+-- Looks for firebrick nodes around pos and exclude from numbers_left 
 -- these which already present nearly. This is used to avoid tile repeating.
 ------------------------------------------------------------------------
 function minetest_hardcorebrix.analyze_surrounding_white_firebricks_and_return_best_nodebox_number(pos)
@@ -250,7 +250,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
     minetest.register_node(
         "minetest_hardcorebrix:node_white_firebrick_dry_damaged_3_nodebox"..index,
         {
-            description = "Red Firebrick Block (Damaged 3 times)",
+            description = "White Firebrick Block (Damaged 3 times)",
             drop        = "",
             tiles       = { "minetest_hardcorebrix_node_white_firebrick_dry_damaged_2.png" },
             groups      = { cracky = 1, stone = 1 },
@@ -298,7 +298,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
     minetest.register_node(
         "minetest_hardcorebrix:node_white_firebrick_dry_damaged_4_nodebox"..index,
         {
-            description = "Red Firebrick Block (Damaged 4 times)",
+            description = "White Firebrick Block (Damaged 4 times)",
             drop        = "",
             tiles       = { "minetest_hardcorebrix_node_white_firebrick_dry_damaged_2.png" },
             groups      = { cracky = 1, stone = 1 },
@@ -346,7 +346,7 @@ for index,nodeboxBox in pairs(nodeboxes) do
     minetest.register_node(
         "minetest_hardcorebrix:node_white_firebrick_dry_damaged_5_nodebox"..index,
         {
-            description = "Red Firebrick Block (Damaged 5 times)",
+            description = "White Firebrick Block (Damaged 5 times)",
             drop        = "",
             tiles       = { "minetest_hardcorebrix_node_white_firebrick_dry_damaged_2.png" },
             groups      = { cracky = 1, stone = 1 },
