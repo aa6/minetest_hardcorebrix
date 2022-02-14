@@ -243,6 +243,7 @@ local nodebox =
 
 table.foreach({0, math.pi * 1/2,  math.pi, math.pi * 3/2},function(nodeRotateIndex,nodeRotateAngle)
     nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.rotate_nodebox_clockwise(nodebox,"y",nodeRotateAngle)
+    nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.optimize_nodebox(nodeboxes[nodeRotateIndex])
 end)
 table.foreach(nodeboxes,function(nodeBoxIndex,nodeBox)
     -- It could be 8 but 6 is visually enough.
@@ -315,6 +316,7 @@ local nodebox =
 
 table.foreach({0, math.pi * 1/2,  math.pi, math.pi * 3/2},function(nodeRotateIndex,nodeRotateAngle)
     nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.rotate_nodebox_clockwise(nodebox,"y",nodeRotateAngle)
+    nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.optimize_nodebox(nodeboxes[nodeRotateIndex])
 end)
 table.foreach(nodeboxes,function(nodeBoxIndex,nodeBox)
     -- It could be 8 but 6 is visually enough.
@@ -387,6 +389,7 @@ local nodebox =
 
 table.foreach({0, math.pi * 1/2,  math.pi, math.pi * 3/2},function(nodeRotateIndex,nodeRotateAngle)
     nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.rotate_nodebox_clockwise(nodebox,"y",nodeRotateAngle)
+    nodeboxes[nodeRotateIndex] = minetest_hardcorebrix.optimize_nodebox(nodeboxes[nodeRotateIndex])
 end)
 table.foreach(nodeboxes,function(nodeBoxIndex,nodeBox)
     -- It could be 8 but 6 is visually enough.
