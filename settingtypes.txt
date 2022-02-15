@@ -2,7 +2,10 @@
 minetest_hardcorebrix.ENABLE_INGAME_SETTINGS (ENABLE ALL THE MOD SETTINGS BELOW) bool true
 
 # Red fired clay brick default cooking time in seconds.
-minetest_hardcorebrix.RED_FIRED_CLAY_BRICK_DEFAULT_COOKING_TIME_SECONDS (Red brick cooking time in seconds) int 60
+minetest_hardcorebrix.RED_FIRED_CLAY_BRICK_DEFAULT_COOKING_TIME_SECONDS (Red brick cooking time in seconds) int 30
+
+# White fired clay brick default cooking time in seconds.
+minetest_hardcorebrix.WHITE_FIRED_CLAY_BRICK_DEFAULT_COOKING_TIME_SECONDS (White brick cooking time in seconds) int 30
 
 # Wet red firebrick ability to dry in ABM interval seconds.
 minetest_hardcorebrix.WET_RED_FIREBRICK_DRYING_ATTEMPTS_ABM_INTERVAL_SECONDS (Wet red firebrick ABM interval in seconds) int 30
@@ -11,7 +14,10 @@ minetest_hardcorebrix.WET_RED_FIREBRICK_DRYING_ATTEMPTS_ABM_INTERVAL_SECONDS (We
 minetest_hardcorebrix.WET_RED_FIREBRICK_DRYING_CHANCE_SURROUNDING_LIGHT_FACTOR (Wet red firebrick drying by light coefficient) int 2
 
 # Chance of red firebrick to be broken by a pickaxe in percents.
-minetest_hardcorebrix.CHANCE_OF_RED_FIREBRICK_BREAKING_BY_PICKAXE_PERCENTS (Red firebrick pickaxe dig chance) int 20
+minetest_hardcorebrix.CHANCE_OF_RED_FIREBRICK_BREAKING_BY_PICKAXE_PERCENTS (Red firebrick pickaxe dig chance) int 9
+
+# Chance of white firebrick to be broken by a pickaxe in percents.
+minetest_hardcorebrix.CHANCE_OF_WHITE_FIREBRICK_BREAKING_BY_PICKAXE_PERCENTS (White firebrick pickaxe dig chance) int 13
 
 # Chance of wet red firebrick to start drying in percents.
 minetest_hardcorebrix.CHANCE_OF_WET_RED_FIREBRICK_TO_START_DRYING_PROCESS_PERCENTS (Chance of wet red firebrick drying in percents) int 80
@@ -19,17 +25,11 @@ minetest_hardcorebrix.CHANCE_OF_WET_RED_FIREBRICK_TO_START_DRYING_PROCESS_PERCEN
 # Chance of wet red firebrick to start drying in darkness in percents.
 minetest_hardcorebrix.CHANCE_OF_WET_RED_FIREBRICK_DRYING_IN_THE_TOTAL_DARK_PERCENTS (Chance of wet red firebrick drying in darkness in percents) int 10
 
-# White fired clay brick default cooking time in seconds.
-minetest_hardcorebrix.WHITE_FIRED_CLAY_BRICK_DEFAULT_COOKING_TIME_SECONDS (White brick cooking time in seconds) int 60
-
 # Wet white firebrick ability to dry in ABM interval seconds.
 minetest_hardcorebrix.WET_WHITE_FIREBRICK_DRYING_ATTEMPTS_ABM_INTERVAL_SECONDS (Wet white firebrick ABM interval in seconds) int 30
 
 # Chance of wet white firebrick to dry when exposed to light coefficient.
 minetest_hardcorebrix.WET_WHITE_FIREBRICK_DRYING_CHANCE_SURROUNDING_LIGHT_FACTOR (Wet white firebrick drying by light coefficient) int 2
-
-# Chance of white firebrick to be broken by a pickaxe in percents.
-minetest_hardcorebrix.CHANCE_OF_WHITE_FIREBRICK_BREAKING_BY_PICKAXE_PERCENTS (White firebrick pickaxe dig chance) int 20
 
 # Chance of wet white firebrick to start drying in percents.
 minetest_hardcorebrix.CHANCE_OF_WET_WHITE_FIREBRICK_TO_START_DRYING_PROCESS_PERCENTS (Chance of wet white firebrick drying in percents) int 80
