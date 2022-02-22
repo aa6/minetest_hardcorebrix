@@ -1,7 +1,7 @@
 -- World-specific configs are available. To create world-specific config,
 -- copy this file to `worlds/<worldname>/mod_minetest_hardcorebrix_config.lua`
 -- Common config values.
-
+minetest_hardcorebrix.ENABLE_INGAME_SETTINGS = true
 -- Red firebrick configuration
 minetest_hardcorebrix.RED_FIRED_CLAY_BRICK_DEFAULT_COOKING_TIME_SECONDS             = 60
 minetest_hardcorebrix.WET_RED_FIREBRICK_DRYING_ATTEMPTS_ABM_INTERVAL_SECONDS        = 30
